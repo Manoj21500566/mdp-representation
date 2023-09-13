@@ -1,37 +1,69 @@
 # MDP REPRESENTATION
 
 ## AIM:
-Write your aim here
+To represent any one real-world problem in MDP form.
 
 ## PROBLEM STATEMENT:
-
-### Problem Description
-Write your answer here
+To develope the game application, the role of the agent is to promote the frog into the next level that level having food.
 
 ### State Space
-Write your answer here
-
+~~~
+{L1,L2,L3}-->{0,1,2}
+L1->Level1
+L2->Level2
+L3->Levvel3
+~~~
 ### Sample State
-Write your answer here
+~~~
+L2->Level2,1
+~~~
 
 ### Action Space
-Write your answer here
+~~~
+Jump left
+Jump right
+~~~
 
 ### Sample Action
-Write your answer here
+~~~
+Jump right ->Frog gets food
+~~~
 
 ### Reward Function
-Write your answer here
+~~~
+Reward= 
+         +1, if the frog reaches the leaf with food
+          0, Otherwise
+
+~~~
 
 ### Graphical Representation
-Write your answer here
+![1](https://github.com/Manoj21500566/mdp-representation/assets/94588708/3aad88f5-fb3a-474f-aec8-d0e3ff89aa2a)
+
 
 ## PYTHON REPRESENTATION:
-Write your code here
+~~~
+Register Number:212221240027
+Name:Manoj M
+P = {
+    0:{
+        0: [(0,1,1,True)],
+        1: [(1.0,0,1.0,False)]
+    },
+    1:{
+        0: [(0,2,1,True)],
+        1: [(1,0,1,False)]
+    },
+    2:{
+        0: [(0,2,1,True)],
+        1: [(1,1,1,False)]
+    }
+}
 
 ## OUTPUT:
-Write your Python output here
+![2](https://github.com/Manoj21500566/mdp-representation/assets/94588708/5a34355a-9118-4b41-86d7-14a12f3a05f2)
+
 
 ## RESULT:
-Write your output here
+Thus the given real world problem is successfully represented in a MDP form .
 
